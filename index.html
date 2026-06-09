@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formula 1 | Where Speed Meets Legend</title>
+  <meta name="description" content="A cinematic Formula 1 race season landing page." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body class="bg-night text-white antialiased selection:bg-f1red selection:text-white">
+  <nav id="navbar" class="fixed inset-x-0 top-0 z-50 border-b border-white/0 transition-all duration-300">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
+      <a href="#hero" class="font-orbitron text-xl font-black tracking-[0.22em] text-white">
+        F<span class="text-f1red">1</span>
+      </a>
+      <div class="hidden items-center gap-8 font-barlow text-sm font-semibold uppercase tracking-[0.22em] text-white/70 md:flex">
+        <a class="transition hover:text-white" href="#season">Season</a>
+        <a class="transition hover:text-white" href="#drivers">Drivers</a>
+        <a class="transition hover:text-white" href="#standings">Standings</a>
+        <a class="transition hover:text-white" href="#tickets">Tickets</a>
+      </div>
+      <a href="#tickets" class="track-slice bg-f1red px-5 py-2 font-barlow text-sm font-bold uppercase tracking-[0.18em] text-white shadow-redglow transition hover:bg-white hover:text-f1red">
+        Race Pass
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero" class="speed-lines scanline relative flex min-h-screen overflow-hidden pt-24">
+      <div class="hud-grid absolute inset-0 opacity-35"></div>
+      <div class="absolute left-0 top-24 h-28 w-1/2 bg-f1red/80 blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-f1red/20 blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-night to-transparent"></div>
+
+      <div class="relative z-10 mx-auto grid max-w-7xl flex-1 items-center gap-10 px-5 pb-16 pt-16 sm:px-8 lg:grid-cols-[1.12fr_0.88fr]">
+        <div>
+          <div class="mb-6 flex flex-wrap items-center gap-3 font-barlow text-sm font-semibold uppercase tracking-[0.28em] text-chrome">
+            <span class="h-px w-12 bg-f1red"></span>
+            2025 World Championship
+            <span class="rounded-full border border-f1red/50 px-3 py-1 text-f1red">Live Telemetry</span>
+          </div>
+          <h1 class="hero-title font-orbitron text-[clamp(3.2rem,10vw,8.8rem)] font-black uppercase leading-[0.86] tracking-normal">
+            Where Speed <span class="chrome-text block">Meets Legend</span>
+          </h1>
+          <div class="mt-7 h-1 w-52 bg-f1red shadow-redglow"></div>
+          <p class="mt-7 max-w-2xl font-barlow text-2xl font-medium uppercase leading-tight tracking-[0.08em] text-white/78 sm:text-3xl">
+            Twenty elite drivers. Ten engineering temples. One season measured in milliseconds.
+          </p>
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a href="#season" class="track-slice bg-f1red px-8 py-4 text-center font-barlow text-lg font-bold uppercase tracking-[0.18em] text-white shadow-redglow transition hover:translate-x-1 hover:bg-white hover:text-f1red">
+              Explore Season
+            </a>
+            <a href="#drivers" class="track-slice border border-white/25 bg-white/5 px-8 py-4 text-center font-barlow text-lg font-bold uppercase tracking-[0.18em] text-white backdrop-blur transition hover:border-f1red hover:text-f1red">
+              Watch Highlights
+            </a>
+          </div>
+        </div>
+
+        <div class="relative hidden min-h-[520px] lg:block">
+          <div class="absolute right-8 top-8 h-[430px] w-[430px] rounded-full border border-white/10"></div>
+          <div class="absolute right-0 top-24 h-80 w-80 rounded-full border border-f1red/40 shadow-redglow"></div>
+          <div class="absolute right-20 top-0 h-full w-36 -skew-x-12 bg-gradient-to-b from-f1red/90 via-white/10 to-transparent blur-[1px]"></div>
+          <div class="absolute bottom-14 right-0 w-[520px] -skew-x-12 border-y border-white/20 bg-black/50 px-9 py-8 shadow-2xl backdrop-blur">
+            <p class="font-barlow text-sm font-semibold uppercase tracking-[0.3em] text-f1red">Sector Delta</p>
+            <div class="mt-4 grid grid-cols-3 gap-4">
+              <div>
+                <p class="font-orbitron text-3xl font-bold">337</p>
+                <p class="font-barlow uppercase tracking-[0.18em] text-white/45">km/h</p>
+              </div>
+              <div>
+                <p class="font-orbitron text-3xl font-bold">1.8</p>
+                <p class="font-barlow uppercase tracking-[0.18em] text-white/45">g-load</p>
+              </div>
+              <div>
+                <p class="font-orbitron text-3xl font-bold text-f1red">DRS</p>
+                <p class="font-barlow uppercase tracking-[0.18em] text-white/45">armed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="season" class="border-y border-white/10 bg-black/70">
+      <div class="mx-auto grid max-w-7xl grid-cols-2 gap-y-8 px-5 py-9 sm:px-8 md:grid-cols-4">
+        <div class="px-4 md:border-r md:border-f1red/60">
+          <p class="font-orbitron text-4xl font-black text-white">23</p>
+          <p class="font-barlow text-lg uppercase tracking-[0.22em] text-white/55">Races</p>
+        </div>
+        <div class="px-4 md:border-r md:border-f1red/60">
+          <p class="font-orbitron text-4xl font-black text-white">10</p>
+          <p class="font-barlow text-lg uppercase tracking-[0.22em] text-white/55">Teams</p>
+        </div>
+        <div class="px-4 md:border-r md:border-f1red/60">
+          <p class="font-orbitron text-4xl font-black text-white">20</p>
+          <p class="font-barlow text-lg uppercase tracking-[0.22em] text-white/55">Drivers</p>
+        </div>
+        <div class="px-4">
+          <p class="font-orbitron text-4xl font-black text-white">75</p>
+          <p class="font-barlow text-lg uppercase tracking-[0.22em] text-white/55">Years of F1</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tickets" class="relative overflow-hidden py-24">
+      <div class="absolute inset-y-0 right-0 w-1/2 -skew-x-12 bg-f1red/10"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-[0.72fr_1.28fr]">
+        <div>
+          <p class="font-barlow text-sm font-bold uppercase tracking-[0.32em] text-f1red">Featured Race</p>
+          <h2 class="mt-3 font-orbitron text-4xl font-black uppercase leading-none sm:text-6xl">Next Race</h2>
+          <p class="mt-5 max-w-md text-white/58">A floodlit street circuit, brutal braking zones, and a title fight that refuses to cool down.</p>
+        </div>
+        <article class="relative border-t-4 border-f1red bg-black/70 p-6 shadow-redglow backdrop-blur sm:p-9">
+          <div class="carbon-weave absolute inset-0 opacity-20"></div>
+          <div class="relative grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
+            <div>
+              <p class="font-barlow text-lg font-bold uppercase tracking-[0.24em] text-chrome">Round 08</p>
+              <h3 class="mt-3 font-orbitron text-4xl font-black uppercase leading-none sm:text-6xl">Monaco GP</h3>
+              <div class="mt-5 flex flex-wrap gap-3 font-barlow text-xl uppercase tracking-[0.12em] text-white/70">
+                <span>🇲🇨 Circuit de Monaco</span>
+                <span class="text-f1red">/</span>
+                <span>May 25, 2025</span>
+              </div>
+            </div>
+            <a href="#" class="track-slice bg-white px-7 py-4 text-center font-barlow text-lg font-black uppercase tracking-[0.18em] text-black transition hover:bg-f1red hover:text-white">
+              Get Tickets
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="drivers" class="bg-black/40 py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div>
+            <p class="font-barlow text-sm font-bold uppercase tracking-[0.32em] text-f1red">Driver Roster</p>
+            <h2 class="mt-3 font-orbitron text-4xl font-black uppercase leading-none sm:text-6xl">2025 Grid</h2>
+          </div>
+          <p class="max-w-lg text-white/55">Four contenders, four identities, one shared obsession: extracting grip where physics says there is none.</p>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="group relative min-h-64 overflow-hidden border-l-4 border-f1red bg-zinc-950 p-6 shadow-insetline transition duration-300 hover:-translate-y-2 hover:shadow-redglow">
+            <span class="absolute -right-4 top-2 font-orbitron text-8xl font-black text-white/[0.055]">16</span>
+            <p class="font-barlow text-sm font-bold uppercase tracking-[0.25em] text-f1red">Ferrari</p>
+            <h3 class="relative mt-16 font-orbitron text-2xl font-black uppercase">Charles Leclerc</h3>
+            <p class="relative mt-2 font-barlow text-xl uppercase tracking-[0.14em] text-white/55">Monaco</p>
+          </article>
+          <article class="group relative min-h-64 overflow-hidden border-l-4 border-chrome bg-zinc-950 p-6 shadow-insetline transition duration-300 hover:-translate-y-2 hover:shadow-[0_0_34px_rgba(192,192,192,.22)]">
+            <span class="absolute -right-4 top-2 font-orbitron text-8xl font-black text-white/[0.055]">63</span>
+            <p class="font-barlow text-sm font-bold uppercase tracking-[0.25em] text-chrome">Mercedes</p>
+            <h3 class="relative mt-16 font-orbitron text-2xl font-black uppercase">George Russell</h3>
+            <p class="relative mt-2 font-barlow text-xl uppercase tracking-[0.14em] text-white/55">United Kingdom</p>
+          </article>
+          <article class="group relative min-h-64 overflow-hidden border-l-4 border-blue-500 bg-zinc-950 p-6 shadow-insetline transition duration-300 hover:-translate-y-2 hover:shadow-[0_0_34px_rgba(59,130,246,.25)]">
+            <span class="absolute -right-4 top-2 font-orbitron text-8xl font-black text-white/[0.055]">10</span>
+            <p class="font-barlow text-sm font-bold uppercase tracking-[0.25em] text-blue-400">Alpine</p>
+            <h3 class="relative mt-16 font-orbitron text-2xl font-black uppercase">Pierre Gasly</h3>
+            <p class="relative mt-2 font-barlow text-xl uppercase tracking-[0.14em] text-white/55">France</p>
+          </article>
+          <article class="group relative min-h-64 overflow-hidden border-l-4 border-orange-500 bg-zinc-950 p-6 shadow-insetline transition duration-300 hover:-translate-y-2 hover:shadow-[0_0_34px_rgba(249,115,22,.25)]">
+            <span class="absolute -right-4 top-2 font-orbitron text-8xl font-black text-white/[0.055]">81</span>
+            <p class="font-barlow text-sm font-bold uppercase tracking-[0.25em] text-orange-400">McLaren</p>
+            <h3 class="relative mt-16 font-orbitron text-2xl font-black uppercase">Oscar Piastri</h3>
+            <p class="relative mt-2 font-barlow text-xl uppercase tracking-[0.14em] text-white/55">Australia</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="standings" class="py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="mb-10 grid gap-6 md:grid-cols-[0.85fr_1.15fr] md:items-end">
+          <h2 class="font-orbitron text-4xl font-black uppercase leading-none sm:text-6xl">Constructor Standings</h2>
+          <p class="text-white/55 md:text-right">A sharp readout for the garage wall: position, team, and the points that decide winter bragging rights.</p>
+        </div>
+        <div class="overflow-hidden border border-white/10 bg-black/70 shadow-2xl">
+          <table class="w-full min-w-[620px] border-collapse text-left">
+            <thead>
+              <tr class="border-b border-white/10 bg-white/[0.04] font-barlow text-sm uppercase tracking-[0.24em] text-white/50">
+                <th class="px-6 py-5">Position</th>
+                <th class="px-6 py-5">Team</th>
+                <th class="px-6 py-5 text-right">Points</th>
+              </tr>
+            </thead>
+            <tbody class="font-barlow text-2xl uppercase tracking-[0.06em]">
+              <tr class="bg-f1red text-white">
+                <td class="px-6 py-5 font-orbitron font-black">01</td>
+                <td class="px-6 py-5 font-bold">Ferrari</td>
+                <td class="px-6 py-5 text-right font-orbitron font-black">612</td>
+              </tr>
+              <tr class="border-t border-white/10 transition hover:bg-white/[0.04]">
+                <td class="px-6 py-5 font-orbitron text-white/65">02</td>
+                <td class="px-6 py-5">Mercedes-AMG</td>
+                <td class="px-6 py-5 text-right font-orbitron">584</td>
+              </tr>
+              <tr class="border-t border-white/10 transition hover:bg-white/[0.04]">
+                <td class="px-6 py-5 font-orbitron text-white/65">03</td>
+                <td class="px-6 py-5">McLaren</td>
+                <td class="px-6 py-5 text-right font-orbitron">552</td>
+              </tr>
+              <tr class="border-t border-white/10 transition hover:bg-white/[0.04]">
+                <td class="px-6 py-5 font-orbitron text-white/65">04</td>
+                <td class="px-6 py-5">Red Bull Racing</td>
+                <td class="px-6 py-5 text-right font-orbitron">519</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t-2 border-f1red bg-black py-10">
+    <div class="mx-auto flex max-w-7xl flex-col gap-8 px-5 sm:px-8 lg:flex-row lg:items-center lg:justify-between">
+      <div>
+        <p class="font-orbitron text-3xl font-black tracking-[0.22em]">F<span class="text-f1red">1</span></p>
+        <p class="mt-2 font-barlow uppercase tracking-[0.22em] text-white/45">Velocity engineered for legends</p>
+      </div>
+      <div class="flex flex-wrap gap-6 font-barlow text-lg font-semibold uppercase tracking-[0.18em] text-white/62">
+        <a class="hover:text-f1red" href="#season">Schedule</a>
+        <a class="hover:text-f1red" href="#drivers">Drivers</a>
+        <a class="hover:text-f1red" href="#standings">Teams</a>
+        <a class="hover:text-f1red" href="#">News</a>
+      </div>
+      <div class="flex gap-4 text-2xl" aria-label="Social links">
+        <a href="#" aria-label="Video highlights" class="transition hover:text-f1red">▶</a>
+        <a href="#" aria-label="Race radio" class="transition hover:text-f1red">◎</a>
+        <a href="#" aria-label="Live updates" class="transition hover:text-f1red">#</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('navbar');
+    const updateNav = () => {
+      const active = window.scrollY > 24;
+      nav.classList.toggle('bg-black/78', active);
+      nav.classList.toggle('backdrop-blur-xl', active);
+      nav.classList.toggle('border-white/10', active);
+      nav.classList.toggle('shadow-2xl', active);
+    };
+    updateNav();
+    window.addEventListener('scroll', updateNav, { passive: true });
+  </script>
+</body>
+</html>
